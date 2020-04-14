@@ -1,0 +1,14 @@
+.body__login{
+    background-color: white;
+}
+::placeholder{
+    color: black;
+}
+.header--login{
+    background-color: #21C08B;
+    width: 100%;
+    height: 80px;
+    display: flex;
+    justify-content:space-between ;
+    align-items: center;
+}
