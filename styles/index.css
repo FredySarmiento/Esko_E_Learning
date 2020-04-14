@@ -57,6 +57,7 @@ width: 40px;
     margin: 0px;
     color: white;
 }
+/*Clases del Buscador*/
 .main{
     height: 300px;
     /*text-align: center;*/
@@ -79,4 +80,39 @@ width: 40px;
 }
 ::placeholder{
     color: white;
+}
+/*Clases Carousel*/
+.carousel{
+    width: 100%;
+    overflow: scroll;
+    padding: 30px;
+    position: relative;
+}
+.carousel__container
+{
+    white-space: nowrap;
+    margin: 70px 0px;
+    padding: 10px;
+}
+.carousel-item{
+    background-color: palegoldenrod;
+    width: 200px;
+    height: 250px;
+    border-radius: 30px;
+    overflow: hidden;
+    margin-right: 10px;
+    display: inline-block;
+    cursor: pointer;
+    transition: 450ms all;
+    transform-origin: center left;
+}
+.carousel-item:hover ~ .carousel-item {
+    transform: translate3d(100px,0,0);
+}
+.carousel__container:hover .carousel-item{
+ opacity: 0.3;
+}
+.carousel__container:hover .carousel-item:hover{
+    transform: scale(1.5);
+    opacity: 1;
 }
